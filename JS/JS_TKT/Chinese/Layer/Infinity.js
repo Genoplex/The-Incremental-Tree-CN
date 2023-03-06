@@ -218,7 +218,6 @@ addLayer('Infinity',
 
     clickables :  (()=>
     {
-        /*
         var Clickables = {}
 
         // Reset ----------------------------------------------------------------------------------------------------------------------------------------------
@@ -385,6 +384,5 @@ addLayer('Infinity',
         Clickables[6].tooltip = 'Addition<br>----------------------<br>The effect of this upgrade will decrease as the number of iteration layers increases.<br><br>For instance: <br>50% for Iteration 2, 33% for Iteration 3, etc.'
     
         return Clickables
-        */
     })()
 })
