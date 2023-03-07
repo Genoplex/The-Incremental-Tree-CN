@@ -176,7 +176,7 @@ addLayer('Infinity',
                 player.Infinity.Infinity_Upgrades[8][4] = new Decimal(-1)
                 player.Infinity.Infinity_Upgrades[9][4] = new Decimal(1)
                 player.Infinity.Infinity_Upgrades[1][3] = new Decimal(12)
-                player.Infinity.Infinity_Upgrades[2][2] = new Decimal(1)
+                player.Infinity.Infinity_Upgrades[2][2] = player.Infinity.Infinity_Upgrades[2][1].pow(0.9).mul(10).max(1).ceil()
                 player.Infinity.Infinity_Upgrades[2][3] = new Decimal(1.05).pow(player.Infinity.Infinity_Upgrades[2][1]).mul(player.Infinity.Infinity_Upgrades[2][1].pow(2).div(5).add(1)).floor()
                 player.Infinity.Infinity_Upgrades[3][3] = new Decimal(50)
                 player.Infinity.Infinity_Upgrades[4][2] = new Decimal(1).div(new Decimal(0.002).mul(player.Infinity.Infinity_Upgrades[4][1].add(1/(9*0.002)))).mul(-1).add(10)
